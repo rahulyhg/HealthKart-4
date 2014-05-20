@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="HealthKart"
+        android:textColor="#FFFFFF"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/login"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="23dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="UserName" />
+
+    <Button
+        android:id="@+id/logiinbutton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/goandpublishbutton"
+        android:layout_marginTop="33dp"
+        android:text="Go" />
+
+</RelativeLayout>

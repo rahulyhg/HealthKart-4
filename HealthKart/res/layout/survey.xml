@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3b3b3"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/question"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="34dp" >
+
+        
+         <RadioButton
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+         
+        <RadioButton
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+       
+
+        <RadioButton
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/next"
+        
+        android:background="@drawable/goandpublishbutton"
+        android:gravity="center"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/radioSex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/goandpublishbutton"
+        android:gravity="center"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioSex"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="82dp"
+        android:text="What you are!"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/next"
+        android:layout_alignTop="@+id/radioSex"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/next"
+        android:background="@drawable/goandpublishbutton"
+        android:gravity="center"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Whey Protein"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:minHeight="6dip"
+                       android:maxHeight="6dip"  
+                       android:thumbOffset="0.5dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/thumb"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioSex"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="18dp"
+        android:text="Step(6/1)"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+</RelativeLayout>
